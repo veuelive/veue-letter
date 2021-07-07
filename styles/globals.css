@@ -10,6 +10,12 @@ body {
   line-height: 35px;
 }
 
+@media(min-width: 600px) {
+  .hiii {
+    justify-content: center;
+  }
+}
+
 a, a:visited, a:hover {
   color: #6460f1;
   text-decoration: none;
