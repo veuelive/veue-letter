@@ -1,17 +1,18 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import burtGif from '../public/burt.gif'
 
 export default function Home() {
   return (
-    <div style={{display: "flex", justifyContent: "space-around", background: "#6460f1"}}>
+    <div style={{display: "flex", alignItems: "center", background: "#6460f1", width: "100%"}}>
       <Head>
         <title>Veue - Interactive, Realtime Video</title>
         <meta name="description" content="We built a realtime live video streaming service..." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main style={{maxWidth: "min(600px, 80vw)", background: "white", padding: "20px", margin: "20px 0 20px 0"}}>
-        <div style={{display: "flex", justifyContent: "space-around", marginBottom: "40px"}}>
+      <main style={{maxWidth: "600px", background: "white", padding: "20px", margin: "20px 0 20px 0"}}>
+        <div style={{display: "flex", alignItems: "center", marginBottom: "40px"}}>
             <svg viewBox="0 0 80 24" width="50%">
               <path d="M42.0815 5.33934C42.2021 5.26697 42.3227 5.21872 42.4674 5.21872C42.6604 5.21872 42.8534 5.29109 43.0223 5.41171C43.1912 5.55645 43.2635 5.7012 43.2635 5.89419C43.2635 5.99068 43.2394 6.1113 43.1912 6.2078L37.6668 18.4868C37.5944 18.6557 37.4738 18.7763 37.3291 18.8728C37.1843 18.9693 37.0154 19.0176 36.8225 19.0176C36.6536 19.0176 36.4847 18.9693 36.3159 18.8728C36.1711 18.7763 36.0505 18.6557 35.9781 18.4868L30.4538 6.23192C30.4055 6.13543 30.4055 6.03893 30.4055 5.94244C30.4055 5.72532 30.4779 5.55645 30.6468 5.43583C30.8156 5.29109 31.0086 5.24284 31.2016 5.24284C31.5152 5.24284 31.7323 5.38759 31.8771 5.67707L36.8466 16.8947L41.792 5.67707C41.8643 5.53233 41.9608 5.41171 42.0815 5.33934Z" fill="#40424F"></path>
               <path d="M45.3623 18.7281C45.2175 18.5833 45.1451 18.3903 45.1451 18.1732V6.1354C45.1451 5.89416 45.2175 5.72529 45.3623 5.58055C45.507 5.43581 45.7 5.36343 45.9412 5.36343H53.1543C53.3955 5.36343 53.5644 5.41168 53.685 5.5323C53.8056 5.65292 53.878 5.79766 53.878 6.01478C53.878 6.23189 53.8056 6.37664 53.685 6.49725C53.5644 6.61787 53.3714 6.66612 53.1543 6.66612H46.7132V11.3944H52.7683C53.0095 11.3944 53.1784 11.4426 53.299 11.5633C53.4196 11.6839 53.492 11.8286 53.492 12.0457C53.492 12.2629 53.4196 12.4076 53.299 12.5282C53.1784 12.6488 52.9854 12.6971 52.7683 12.6971H46.7132V17.6184H53.1543C53.3955 17.6184 53.5644 17.6666 53.685 17.7872C53.8056 17.9078 53.878 18.0526 53.878 18.2697C53.878 18.4868 53.8056 18.6316 53.685 18.7522C53.5644 18.8728 53.3714 18.921 53.1543 18.921H45.9412C45.7241 18.9452 45.5311 18.8728 45.3623 18.7281Z" fill="#40424F"></path>
@@ -72,7 +73,7 @@ export default function Home() {
             </a>
           </p>
         <p style={{display: "flex", justifyContent: "space-around"}}>
-          <img src="/burt.gif" />
+          <Image src={burtGif} alt="Burt Reynolds Saying Goodbye"/>
         </p>
       </main>
     </div>
